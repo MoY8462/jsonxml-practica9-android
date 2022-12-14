@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">JSONXML</string>
+    <string name="error">No se encuentra la información, revise la conexión</string>
 </resources>

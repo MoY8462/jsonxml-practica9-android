@@ -25,6 +25,59 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/searchText"
         />
+    <Button
+        android:id="@+id/restxml"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Datos xml"
+        app:layout_constraintStart_toEndOf="@+id/search"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/searchText"
+        app:layout_constraintHorizontal_bias=".13"/>
+    <Button
+        android:id="@+id/restjson"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Datos JSON"
+        app:layout_constraintStart_toEndOf="@+id/restxml"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/searchText"
+        app:layout_constraintHorizontal_bias=".73"/>
+    <Button
+        android:id="@+id/restjsonid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="JSON ID"
+        app:layout_constraintStart_toStartOf="@+id/search"
+        app:layout_constraintStart_toEndOf="@+id/search"
+        app:layout_constraintTop_toTopOf="@+id/search"
+        app:layout_constraintHorizontal_bias="1"
+        android:layout_marginTop="84dp"
+        />
+    <Button
+        android:id="@+id/restjsonadd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="JSON POST"
+
+        app:layout_constraintStart_toStartOf="@+id/restxml"
+        app:layout_constraintEnd_toEndOf="@+id/restxml"
+        app:layout_constraintTop_toBottomOf="@+id/restxml"
+        app:layout_constraintHorizontal_bias=".41"
+        android:layout_marginTop="36dp"
+        />
+
+    <Button
+        android:id="@+id/restjsondelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="JSON Delete"
+        app:layout_constraintHorizontal_bias="0.411"
+        app:layout_constraintLeft_toLeftOf="@+id/restjson"
+        app:layout_constraintRight_toRightOf="@id/restjson"
+        app:layout_constraintTop_toBottomOf="@+id/restjson" />
+
     <androidx.core.widget.NestedScrollView
         android:id="@+id/nestedscroll"
         android:layout_width="wrap_content"
